@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #6793af ;
+  font-family: "Outfit";
+}
+.home {
+  display: block;
+  height: 100%;
+}
+.icon,
+.removebg-1-icon {
+  display: block;
+  width: 100%;
+  display: block;
+}
+.icon {
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+}
+.removebg-1-icon {
+  position: absolute;
+  object-fit: cover;
+  z-index: 3;
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  margin-top: 50px;
+}
+.hi-there-im {
+  position: absolute;
+  z-index: 1;
+  margin-bottom: 60px;
+  font-size: 90px;
+  color: #000;
+}
+.a-computer-engineer {
+  position: absolute;
+  color: #ffffff;
+  font-size: 50px;
+  z-index: 1;
+  margin-top: 150px;
+}
+
+.home {
+  display: block;
+  height: 100vh;
+}
+
+/*------------------------- navbar ----------------- */
+
+.navbar {
+  width: 100%;
+  position: absolute;
+  top: 55px;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 4;
+}
+.logo {
+  font-size: 38px;
+  text-decoration: none;
+  color: #3c476b;
+}
+@supports (font-variation-settings: "wght" 800) {
+  .logo {
+    font-weight: 800;
+  }
+}
+.navlinks {
+  width: 700px;
+  font-size: 27px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navlinks a {
+  color: #3c476b;
+  text-decoration: none;
+}
+.navlinks a:hover {
+  color: #ffffff;
+}
+#active {
+  position: relative;
+  color: #ffffff;
+}
+#active:hover {
+  color: #3c476b;
+}
+
+/* ----------------------------- basic commman --------------------------- */
+
+.heading {
+  display: flex;
+  min-height: 200px;
+  justify-content: center;
+  align-items: center;
+  font-size: 64px;
+  color: #ffffff;
+}
+/* ----------------------------- about --------------------------- */
+
+.about-me {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 230px;
+}
+.icon1 {
+  width: 45%;
+  height: 30%;
+}
+.aboutMeContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slideglass {
+  display: flex;
+  backdrop-filter: blur(30px);
+  border-radius: 30px;
+  border: #77a3bf 1px solid;
+  position: relative;
+  top: 180px;
+  left: -200px;
+}
+
+.slideglass .item {
+  width: 400px;
+  height: 270px;
+}
+.self {
+  width: 200px;
+  height: 280px;
+  color: #e8eddf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.scroll-head {
+  font-size: 30px;
+}
+.scroll-head span {
+  font-weight: 600;
+}
+.self-content {
+  position: relative;
+  text-transform: capitalize;
+  /* margin: 30px; */
+  width: 270px;
+  font-size: 22px;
+}
+
+/* ----------------------------- Education  --------------------------- */
+
+.educationContainer {
+  width: 100%;
+  margin-top: 190px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.education,
+.skill {
+  background-color: #FFFFFF;
+  color: #3c476b;
+  border-radius: 30px;
+  margin: 20px;
+  font-weight: 500;
+}
+.educationHeading,
+.skillHeading {
+  color: #3c476b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 800;
+}
+.education {
+  margin-left: 19px;
+  width: 580px;
+}
+.skill {
+  width: 870px;
+}
+.education-content,
+.skill-content {
+  text-transform: capitalize;
+  font-size: 22px;
+  margin: 40px;
+  margin-top: 20px;
+}
+.skill-content ul{
+    list-style:none;
+}
+.educationHeading,
+.skillHeading {
+  margin-top: 40px;
+}
+.education-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 230px;
+  line-height: 30px;
+}
+.skill-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* padding-bottom: 10px; */
+  /* margin: 0px; */
+  line-height: 42px;
+}
